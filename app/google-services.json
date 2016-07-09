@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "16749622562",
+    "firebase_url": "https://commoncents-81973.firebaseio.com",
+    "project_id": "commoncents-81973",
+    "storage_bucket": "commoncents-81973.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16749622562:android:cf39ccfad48816e4",
+        "android_client_info": {
+          "package_name": "app.android.example.com.commontcents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16749622562-8ulfg0gdfrt6mqmrb8vseufgdj6qlgn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy4P9ZmrVYUikcQ9O6Qd2aD-_QdWwTq6A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
