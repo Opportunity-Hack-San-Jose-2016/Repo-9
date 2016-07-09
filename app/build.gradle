@@ -1,28 +1,105 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+}
+
+repositories {
+    maven {
+        // Used for downloading dependency com.github.lkorth:device-automator
+        url "https://jitpack.io"
+    }
+    mavenCentral()
+}
+
+apply plugin: 'com.android.application'
+
 android {
     compileSdkVersion 23
-    buildToolsVersion "24.0.0"
+    buildToolsVersion '23.0.2'
 
     defaultConfig {
-        applicationId "app.android.example.com.commontcents"
-        minSdkVersion 23
+        minSdkVersion 18
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
         }
+        release {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
+    // Only for SampleApp.
+    // It is failing because the okio version and okhttp is not found, which is expected.
+    lintOptions {
+        abortOnError false
+    }
+
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            signingConfig signingConfigs.debug
+        }
+
+        release{
+            minifyEnabled true
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            signingConfig signingConfigs.release
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                output.outputFile = new File(outputFile.parent, "paypal-sample-app-${variant.name}.apk")
+            }
+        }
+    }
+
+    productFlavors {
+        general
+        partner
     }
 }
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.firebase:firebase-client-android:2.3.1'
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.0.1'
 }
-apply plugin: 'com.google.gms.google-services'
+
+
+dependencies {
+    compile('com.paypal.sdk:paypal-android-sdk:2.14.4')
+    compile 'com.google.android.gms:play-services-wallet:8.4.0'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+
+    compile 'com.android.support:appcompat-v7:24.0.0'
+
+    testCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile 'com.github.lkorth:device-automator:30238040d8'
+    testCompile 'com.google.dexmaker:dexmaker-mockito:1.1'
+    testCompile 'com.android.support.test.espresso:espresso-intents:2.2.1'
+    testCompile 'com.android.support.test.espresso:espresso-web:2.2.1'
+    testCompile 'com.android.support.test:runner:0.4.1'
+    testCompile 'com.android.support.test:rules:0.4.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14'
+}
