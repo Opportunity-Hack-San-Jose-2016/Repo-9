@@ -28,7 +28,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 /**
@@ -42,6 +44,18 @@ public class ListContentFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(
                 R.layout.recycler_view, container, false);
         ContentAdapter adapter = new ContentAdapter(recyclerView.getContext());
+
+        Button button = (Button) container.findViewById(R.id.plus_button);
+        final ProgressBar progressBar = (ProgressBar) container.findViewById(R.id.progress_bar);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                progressBar.incrementProgressBy(10);
+                progressBar.setProgress(100*progressBar.getProgress());
+            }
+        });
+
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -98,9 +112,6 @@ public class ListContentFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
-            holder.avator.setImageDrawable(mPlaceAvators[position % mPlaceAvators.length]);
-            holder.name.setText(mPlaces[position % mPlaces.length]);
-            holder.description.setText(mPlaceDesc[position % mPlaceDesc.length]);
         }
 
         @Override
