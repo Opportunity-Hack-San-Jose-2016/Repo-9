@@ -25,10 +25,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
+import app.android.example.com.commontcents.Data.PoolCounter;
+
 /**
  * Provides UI for the view with List.
  */
 public class ListContentFragment extends Fragment {
+
+    public PoolCounter poolCounter = new PoolCounter();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,24 +40,18 @@ public class ListContentFragment extends Fragment {
         View recyclerView = inflater.inflate(
                 R.layout.item_list, container, false);
 
-        Button button = (Button) recyclerView.findViewById(R.id.plus_button);
         final ProgressBar progressBar = (ProgressBar) recyclerView.findViewById(R.id.progress_bar);
         progressBar.setScaleY(3f);
 
         final Handler mHandler = new Handler();
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                mHandler.post(new Runnable() {
-                    public void run() {
-                        progressBar.incrementProgressBy(10);
-                        progressBar.setProgress(progressBar.getProgress());
-                    }
-                });
+        mHandler.post(new Runnable() {
+            public void run() {
+                progressBar.incrementProgressBy(10*poolCounter.getCount());
+                progressBar.setProgress(progressBar.getProgress());
             }
         });
+
         return recyclerView;
     }
 }

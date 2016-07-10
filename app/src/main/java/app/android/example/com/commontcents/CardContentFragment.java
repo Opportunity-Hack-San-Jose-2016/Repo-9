@@ -24,6 +24,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.util.Pools;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -34,10 +35,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import app.android.example.com.commontcents.Data.PoolCounter;
+
 /**
  * Provides UI for the view with Cards.
  */
 public class CardContentFragment extends Fragment {
+
+    public static PoolCounter poolCounter = new PoolCounter();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -75,8 +80,9 @@ public class CardContentFragment extends Fragment {
             button.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    Snackbar.make(v, "Action is pressed",
+                    Snackbar.make(v, "Thank you for donating the full item!",
                             Snackbar.LENGTH_LONG).show();
+                    poolCounter.incrementFull();
                 }
             });
 
@@ -87,6 +93,7 @@ public class CardContentFragment extends Fragment {
                 public void onClick(View v) {
                     Snackbar.make(v, "Added to Pool",
                             Snackbar.LENGTH_LONG).show();
+                    poolCounter.increment();
                 }
             });
 
