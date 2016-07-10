@@ -57,6 +57,8 @@ public class CardContentFragment extends Fragment {
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
+        public ImageButton favoriteImageButton;
+        private boolean toggle;
         public ImageView picture;
         public TextView name;
         public TextView description;
@@ -86,14 +88,27 @@ public class CardContentFragment extends Fragment {
                 }
             });
 
-            ImageButton favoriteImageButton =
+            toggle = false;
+            favoriteImageButton =
                     (ImageButton) itemView.findViewById(R.id.favorite_button);
             favoriteImageButton.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    Snackbar.make(v, "Added to Pool",
-                            Snackbar.LENGTH_LONG).show();
-                    poolCounter.increment();
+
+                    toggle = !toggle;
+                    if(toggle)
+                    {
+                        favoriteImageButton.setColorFilter(R.color.button_red);
+                        Snackbar.make(v, "Added to Pool",
+                                Snackbar.LENGTH_LONG).show();
+                        poolCounter.increment();
+                    }
+                    else
+                    {
+                        favoriteImageButton.setColorFilter(null);
+                        Snackbar.make(v, "Removed from Pool",
+                                Snackbar.LENGTH_LONG).show();
+                    }
                 }
             });
 
