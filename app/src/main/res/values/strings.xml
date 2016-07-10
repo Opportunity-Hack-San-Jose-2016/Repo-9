@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Commont Cents</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Create</item>
+        <item>Read</item>
+        <item>Help</item>
+    </string-array>
 </resources>

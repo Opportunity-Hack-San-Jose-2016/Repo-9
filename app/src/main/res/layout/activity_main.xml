@@ -9,21 +9,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="app.android.example.com.commontcents.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:orientation="vertical" >
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/giving_tree_logo"
+            android:id="@+id/giving_tree_logo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
 
         <Button
-            android:id="@+id/profileSharingBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:id="@+id/requestJobButton"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="70"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="24dp"
             android:onClick="onProfileSharingPressed"
-            android:text="LOGIN" />
+            android:text="LOGIN"
+            android:layout_gravity="center"
+            android:layout_below="@id/giving_tree_logo"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,6 +48,6 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text=""
             android:id="@+id/txtResult" />
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
