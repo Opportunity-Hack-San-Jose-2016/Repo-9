@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="app.android.example.com.commontcents.MainActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="app.android.example.com.commontcents.MainActivity"
+                android:background="#ffffff">
 
     <RelativeLayout
         android:id="@+id/wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true" >
+        android:layout_centerVertical="true"
+        >
 
         <ImageView
             android:layout_width="wrap_content"
@@ -22,7 +24,11 @@
             android:src="@mipmap/giving_tree_logo"
             android:id="@+id/giving_tree_logo"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"/>
 
         <Button
             android:layout_width="match_parent"
@@ -30,7 +36,6 @@
             android:id="@+id/requestJobButton"
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
             android:shadowColor="@color/white"
             android:shadowRadius="70"
             android:background="@drawable/rounded_button"
@@ -40,7 +45,9 @@
             android:onClick="onProfileSharingPressed"
             android:text="LOGIN"
             android:layout_gravity="center"
-            android:layout_below="@id/giving_tree_logo"/>
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="false"/>
 
         <TextView
             android:layout_width="wrap_content"
