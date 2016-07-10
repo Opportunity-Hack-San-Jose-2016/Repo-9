@@ -191,6 +191,8 @@ public class MainActivity extends Activity {
          * https://github.com/paypal/rest-api-sdk-python/tree/master/samples/mobile_backend
          */
 
+        Intent intent = new Intent(this, HomeScreen.class);
+        startActivity(intent);
     }
 
     @Override
