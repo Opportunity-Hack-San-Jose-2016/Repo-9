@@ -11,10 +11,8 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_drawer"
-        android:layout_width="@dimen/drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="?attr/drawerBackground"
         android:overScrollMode="never"
         android:scrollbars="vertical" />
 
