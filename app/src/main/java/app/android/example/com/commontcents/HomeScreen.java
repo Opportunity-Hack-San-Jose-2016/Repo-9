@@ -77,9 +77,9 @@ public class HomeScreen extends AppCompatActivity {
     // Add Fragments to Tabs
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new ListContentFragment(), "My Pools");
-        adapter.addFragment(new TileContentFragment(), "Karma");
         adapter.addFragment(new CardContentFragment(), "Wishes");
+        adapter.addFragment(new TileContentFragment(), "My Pools");
+        adapter.addFragment(new ListContentFragment(), "Karma");
         viewPager.setAdapter(adapter);
     }
 

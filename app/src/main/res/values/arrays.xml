@@ -16,74 +16,67 @@
   -->
 <resources>
     <string-array name="places">
-        <item>LEGO Lightning McQueen</item>
-        <item>Puppy Surprise Plush - Sugar</item>
-        <item>Play Stroller with a Doll</item>
-        <item>Anything Cars</item>
+        <item>LEGO Cars Ultimate Build Lightning McQueen</item>
+        <item>Kid Connection Baby Doll Stroller Play Set</item>
+        <item>Lightning McQueen</item>
         <item>Doll Accessories</item>
         <item>African American Baby Doll</item>
+        <item>Mega Bloks Jeep Ride On</item>
     </string-array>
     <string-array name="place_desc">
-        <item>The Palais Garnier which locates in Paris was built from 1861 for
-        the Paris Opera.
-        </item>
-        <item>Piazza del Duomo the cathedral which locates in Florence.</item>
-        <item>Manhattan is the district in New York City</item>
-        <item>Senso-ji is the Shrine locates in Asakusa Tokyo</item>
-        <item>Sultan Ahmed Mosque is mosque locates in Istabul, Turkey</item>
-        <item>Table Mountain is mountain and park locates in Cape Town, South Africa.</item>
+        <item>Jeremy, Age 9</item>
+        <item>Sarah, Age 4</item>
+        <item>Kevin, Age 5</item>
+        <item>Maggie, Age 3</item>
+        <item>Katy, Age 2</item>
+        <item>Allan, Age 3</item>
     </string-array>
     <string-array name="place_details">
-        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        <item>LEGO Cars Ultimate Build Lightning McQueen has stunning World Grand Prix looks
+            and is all set to win the race. Drive him fast and take him to victory in a flashy style.
+            The golden racing rims on the wheels add style to his looks. Guido, with the Lightning McQueen flag,
+            is there to cheer give the boost he needs.
         </item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        <item>The Kid Connection Baby Doll Stroller Play Set lets children enjoy fun,
+            imaginative play. It comes with a wide range of accessories, including a change of clothes,
+            a diaper bag and a bottle. This baby doll stroller set makes a wonderful gift for the holidays,
+            birthdays and more. It is also easy to transport and store.
         </item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        <item>Lightning McQueen is an internationally known race car with four Piston Cup wins
+            under his fan belt. He moved to Radiator Springs during his rookie year.
+            The town is home to Team Lightning McQueen\'s racing headquarters, his closest
+            friends, and his sweetheart, Sally. Built for power and speed, Lightning loves the
+            thrill of a great race. But he\'s just as happy to slow down for a quiet cruise with good friends.
         </item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        <item>Everything that\'s necessary for a day in a doll\'s life is here.
+            Take everything your doll needs with you: toys for playtime; pretend food and milk for mealtime;
+            and powder, soap and a rubber duckie for bath time. Lots of duplicate items are included for
+            shopping, counting and sharing fun. This set includes even a travel pottie seat for your doll.
+            The kit features: Includes 1 carrying case and 70 pieces, including: pretend food boxes,
+            bottles and jars; baby bottles, dishes and utensils; toys; pretend bath and personal care products;
+            1 pair of socks, 1 pacifier, and 1 pottie seat with travel pottie Take everything your dolly needs
+            with you wherever you go Carrying case has bottom zip closure and easy carry handle on top.
+            All products in cardboard or plastic. Not suitable for children under three.
         </item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        <item>Isn\'t she the cutest? La Baby is a realistically looking SOFT BABY DOLL with amazingly
+            detailed vinyl head, arms, and legs dressed in a cute purple outfit and matching hat.
         </item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+        <item>
+            Your little 4x4 fan can take his imagination off-road and ride with the legendary Jeep
+            3-in-1 Ride-On by Mega Bloks. The Jeep 3-in-1 Ride-On features iconic colors and design,
+            with easy push-button controls that mimic real Jeep sounds and create an exciting ride for kids.
+            The high-back seat turns the Ride-On into a walker that can easily be pushed from behind.
+            Open the seat to reveal a storage compartment that can hold all 10 First Builders Jeep-themed
+            blocks and more. Ideal for active children ages 1 to 3.
         </item>
     </string-array>
     <string-array name="place_locations">
-        <item>8 Rue Scribe, 75009 Paris, France</item>
-        <item>Piazza del Capitolo - 50122 Florence</item>
-        <item>New York City</item>
-        <item>2-3-1 Asakusa, Taitō-ku, Tokyo, Japan</item>
-        <item>At Meydanı No:7, 34122 Fatih/İstanbul, Turkey</item>
-        <item>Cape Town, South Africa</item>
+        <item>Jeremy, Age 9</item>
+        <item>Sarah, Age 4</item>
+        <item>Kevin, Age 5</item>
+        <item>Maggie, Age 3</item>
+        <item>Katy, Age 2</item>
+        <item>Allan, Age 3</item>
     </string-array>
     <array name="place_avator">
         <item>@drawable/a_avator</item>
