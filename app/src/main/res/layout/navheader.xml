@@ -17,6 +17,14 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/navheader_height"
     android:background="?attr/colorPrimaryDark"
-    android:orientation="vertical"
-    android:padding="@dimen/md_keylines">
+    android:backgroundTint="@color/nav_header_blue"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"
+        android:paddingRight="158dp"/>
 </LinearLayout>

@@ -79,7 +79,7 @@ public class HomeScreen extends AppCompatActivity {
         Adapter adapter = new Adapter(getSupportFragmentManager());
        // adapter.addFragment(new ListContentFragment(), "List");
       //  adapter.addFragment(new TileContentFragment(), "Tile");
-        adapter.addFragment(new CardContentFragment(), "Card");
+        adapter.addFragment(new CardContentFragment(), "Wishes");
         viewPager.setAdapter(adapter);
     }
 
