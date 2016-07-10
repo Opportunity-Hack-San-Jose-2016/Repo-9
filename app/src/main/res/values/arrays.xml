@@ -16,12 +16,12 @@
   -->
 <resources>
     <string-array name="places">
-        <item>Palais Garnie</item>
-        <item>Piazza del Duomo</item>
-        <item>Manhattan</item>
-        <item>Senso-ji</item>
-        <item>Sultan Ahmed Mosque</item>
-        <item>Table Mountain</item>
+        <item>LEGO Lightning McQueen</item>
+        <item>Puppy Surprise Plush - Sugar</item>
+        <item>Play Stroller with a Doll</item>
+        <item>Anything Cars</item>
+        <item>Doll Accessories</item>
+        <item>African American Baby Doll</item>
     </string-array>
     <string-array name="place_desc">
         <item>The Palais Garnier which locates in Paris was built from 1861 for
