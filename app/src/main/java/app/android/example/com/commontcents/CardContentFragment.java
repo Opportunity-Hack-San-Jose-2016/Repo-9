@@ -85,7 +85,7 @@ public class CardContentFragment extends Fragment {
             favoriteImageButton.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    Snackbar.make(v, "Added to Favorite",
+                    Snackbar.make(v, "Added to Pool",
                             Snackbar.LENGTH_LONG).show();
                 }
             });
