@@ -115,7 +115,7 @@ public class CardContentFragment extends Fragment {
             shareImageButton.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    Snackbar.make(v, "Share article",
+                    Snackbar.make(v, "Shared to Facebook",
                             Snackbar.LENGTH_LONG).show();
                 }
             });
