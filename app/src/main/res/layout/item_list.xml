@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/progress_bar"
         android:padding="32dp"
-
+        android:theme="@style/AppTheme.progressBarColor"
         android:layout_gravity="center_vertical"/>
 
     <TextView

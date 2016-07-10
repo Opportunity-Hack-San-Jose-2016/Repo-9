@@ -6,8 +6,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.paypal.android.sdk.payments.PayPalAuthorization;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
@@ -83,14 +81,6 @@ public class MainActivity extends Activity {
         return new PayPalOAuthScopes(scopes);
     }
 
-    protected void displayResultText(String result) {
-        ((TextView)findViewById(R.id.txtResult)).setText("Result : " + result);
-        Toast.makeText(
-                getApplicationContext(),
-                result, Toast.LENGTH_LONG)
-                .show();
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE_PAYMENT) {
@@ -110,7 +100,6 @@ public class MainActivity extends Activity {
                          * For sample mobile backend interactions, see
                          * https://github.com/paypal/rest-api-sdk-python/tree/master/samples/mobile_backend
                          */
-                        displayResultText("PaymentConfirmation info received from PayPal");
 
 
                     } catch (JSONException e) {
@@ -136,7 +125,6 @@ public class MainActivity extends Activity {
                         Log.i("FuturePaymentExample", authorization_code);
 
                         sendAuthorizationToServer(auth);
-                        displayResultText("Future Payment code received from PayPal");
 
                     } catch (JSONException e) {
                         Log.e("FuturePaymentExample", "an extremely unlikely failure occurred: ", e);
@@ -161,7 +149,6 @@ public class MainActivity extends Activity {
                         Log.i("ProfileSharingExample", authorization_code);
 
                         sendAuthorizationToServer(auth);
-                        displayResultText("Profile Sharing code received from PayPal");
 
                     } catch (JSONException e) {
                         Log.e("ProfileSharingExample", "an extremely unlikely failure occurred: ", e);

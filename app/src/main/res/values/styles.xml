@@ -2,10 +2,13 @@
 
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-            <item name="colorPrimary">#3f51b5</item>
+        <item name="colorPrimary">#3f51b5</item>
         <item name="colorPrimaryDark">#757575</item>
         <item name="colorAccent">#000000</item>
         <item name="colorButtonNormal">#689F38</item>
     </style>
     <style name="AppTheme" parent="AppTheme.Base"></style>
+    <style name="AppTheme.progressBarColor">
+        <item name="colorAccent">@color/white</item>#718e2a
+    </style>
 </resources>
